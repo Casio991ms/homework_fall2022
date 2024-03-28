@@ -2,7 +2,7 @@ from collections import OrderedDict
 import numpy as np
 import time
 
-import gym
+import gymnasium as gym
 import torch
 
 from cs285.infrastructure import pytorch_util as ptu
@@ -19,7 +19,7 @@ class RL_Trainer(object):
     def __init__(self, params):
 
         #############
-        ## INIT
+        # INIT
         #############
 
         # Get params, create logger, create TF session
@@ -36,7 +36,7 @@ class RL_Trainer(object):
         )
 
         #############
-        ## ENV
+        # ENV
         #############
 
         # Make the gym environment
@@ -66,7 +66,7 @@ class RL_Trainer(object):
             self.fps = self.env.env.metadata['render_fps']
 
         #############
-        ## AGENT
+        # AGENT
         #############
 
         agent_class = self.params['agent_class']
