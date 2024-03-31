@@ -83,6 +83,7 @@ class MLPPolicy(BasePolicy, nn.Module, metaclass=abc.ABCMeta):
         # TODO return the action that the policy prescribes
         raise NotImplementedError
 
+
     # update/train this policy
     def update(self, observations, actions, **kwargs):
         raise NotImplementedError

@@ -1,6 +1,5 @@
 mujoco
 tensorboard
-tensorboardX
 matplotlib
 ipython
 moviepy
